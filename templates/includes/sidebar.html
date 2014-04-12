@@ -26,7 +26,7 @@
                     {% for article in articles[:RECENT_POST_COUNT] %}
                         <li class="list-group-item">
                             <a href="{{ SITEURL }}/{{ article.url }}">
-                                {{ article.title }}
+                                <i class="fa fa-file-text fa-lg"></i>{{ article.title }}
                             </a>
                         </li>
                     {% endfor %}
@@ -59,7 +59,7 @@
                     {% for tag in tags %}
                         <li class="list-group-item tag-{{ tag.1 }}">
                             <a href="{{ SITEURL }}/{{ tag.0.url }}">
-                                {{ tag.0 }}
+                                <i class="fa fa-tag fa-lg"></i> {{ tag.0 }}
                             </a>
                         </li>
                     {% endfor %}
